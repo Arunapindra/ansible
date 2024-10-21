@@ -10,7 +10,7 @@
 
   - name: print the informtion AGAIN
     vars:
-      COURSE: ONLY DEVOPS
-      DURATION: 150 HRS
+      COURSE: ANSIBLE
+      DURATION: 1OO HRS
     ansible.builtin.debug:
       msg: "hi,iam learning {{ COURSE }}, duration is {{ DURATION }}"   

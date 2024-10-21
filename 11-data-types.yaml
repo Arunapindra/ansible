@@ -1,5 +1,5 @@
 - name: variable to print
-  hosts: web
+  hosts: local
   vars: 
     COURSE: "DevOps with AWS" #string
     DURATION: 120 # takes 120 as number

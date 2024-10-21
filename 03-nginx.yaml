@@ -5,9 +5,9 @@
   - name: Install nginx
     ansible.builtin.package: # heterogenous module that can work for all distribution ex: we use dnf for redhad , apt for ubuntu or Debian
       name: nginx
-      state: present
-  - name: run nginx
-    ansible.builtin.service: 
-      name: nginx
-      state: started
-      enabled: yes
+      state: remove
+  # - name: run nginx
+  #   ansible.builtin.service: 
+  #     name: nginx
+  #     state: started
+  #     enabled: yes

@@ -1,0 +1,19 @@
+- name: variable to print
+  hosts: web
+  vars: 
+    COURSE: "DevOps with AWS" #string
+    DURATION: 120 # takes 120 as number
+    TOPICS: #list
+    - linux
+    - shell
+    - ansible
+    - terrform
+    live: true #boolean
+    tools: #map/dictionary
+      ci: jenkins # only this line is string
+      cm: ansible
+      clous: AWS
+  tasks:
+  - name: print the course information
+    ansible.builtin.debug:
+      msg: "hi, iam learning {{COURSE}} duration {{DURATION}} TOPICS {{TOPICS}} LIVE: {{live}} TOOLS {{tools}}" 

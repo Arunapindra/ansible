@@ -1,5 +1,6 @@
 - name: installing nginx
   hosts: web
+  become: yes
   tasks:
   - name: Install nginx
     ansible.builtin.package: # heterogenous module that can work for all distribution
